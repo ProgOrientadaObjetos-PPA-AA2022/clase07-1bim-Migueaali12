@@ -110,7 +110,7 @@ public class ArchivoLectura {
 
     @Override
     public String toString(){
-        String cadena = "Lista Calificaciones\n";
+        String cadena = "Hospital\n";
         
         for (int i = 0; i < obtenerLista().size(); i++) {
             cadena = String.format("%s(%d) %s %.2f (%s %s)\n", cadena,
