@@ -4,11 +4,11 @@ public class Ejecutor {
 
     public static void main(String[] args) {
 
-        String nombreArchivo = "Hospitales.txt";
+        String nombreArchivo = "hospitales.txt";
 
-        Hospital h1 = new Hospital("Sana Sana", 300, 15000);
-        Hospital h2 = new Hospital("San Agustin", 500, 28000);
-        Hospital h3 = new Hospital("San Sebastian", 700, 39000);
+        Hospital h1 = new Hospital("Sana Sana","444", 300, 15000);
+        Hospital h2 = new Hospital("San Agustin","222", 500, 28000);
+        Hospital h3 = new Hospital("San Sebastian","111", 700, 39000);
 
         EscrituraArchivoSecuencial archivo
                 = new EscrituraArchivoSecuencial(nombreArchivo);

@@ -12,10 +12,12 @@ public class Hospital implements Serializable {
     String nombre;
     int numeroCamas;
     double presupuesto;
+    String idH;
 
-    public Hospital(String nom, int numCamas, double prspto) {
+    public Hospital(String nom, String id, int numCamas, double prspto) {
 
         nombre = nom;
+        idH = id;
         numeroCamas = numCamas;
         presupuesto = prspto;
 
@@ -23,6 +25,10 @@ public class Hospital implements Serializable {
 
     public void establecerNombre(String c) {
         nombre = c;
+    }
+    
+    public void establecerIdh(String c) {
+        idH = c;
     }
 
     public void establecerNumCamas(int c) {
@@ -38,6 +44,10 @@ public class Hospital implements Serializable {
         
     }
     
+    public String obtenerId() {
+        return idH;
+    }
+    
     public int obtenerNumCamas() {
         return numeroCamas;
         
@@ -46,6 +56,16 @@ public class Hospital implements Serializable {
     public double obtenerPresupuesto() {
         return presupuesto;
         
+    }
+    
+    @Override
+    public String toString(){
+        String valor = String.format("%s - %s - %d -%.2f\n",  
+                obtenerNombre(),
+                obtenerId(),
+                obtenerNumCamas(),
+                obtenerPresupuesto());
+        return valor;
     }
 
 }
