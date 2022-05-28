@@ -93,7 +93,7 @@ public class ArchivoLectura {
         String cadena = "Lista Profesores\n";
         for (int i = 0; i < obtenerLista().size(); i++) {
             Hospital profTemporal = obtenerLista().get(i); // Obj. Profesor
-            cadena = String.format("%s%s;%d;%.2f", cadena,
+            cadena = String.format("%s%s;%d;%.2f\n", cadena,
                     
                     profTemporal.obtenerNombre(),// obtenerLista().get(i).obtenerNombre(),
                     profTemporal.obtenerNumCamas(),

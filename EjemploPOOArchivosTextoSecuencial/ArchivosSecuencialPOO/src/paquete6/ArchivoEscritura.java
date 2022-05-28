@@ -31,7 +31,7 @@ public class ArchivoEscritura {
 
     public void establecerRutaArchivo() {
         rutaArchivo = String.format("data/%s.txt",
-                obtenerNombreArchivo());;
+                obtenerNombreArchivo());
     }
 
     public void establecerRegistro(Hospital n) {
@@ -55,7 +55,7 @@ public class ArchivoEscritura {
         try {
             salidaArchivo = new Formatter(new FileWriter(rutaArchivo, true));
             Hospital p = obtenerRegistro();
-            String cadenaRegistro = String.format("%s;%d;%.2f",
+            String cadenaRegistro = String.format("%s;%d;%.2f\n",
                     p.obtenerNombre(),
                     p.obtenerNumCamas(),
                     p.obtenerpresupuesto()

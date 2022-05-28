@@ -15,7 +15,7 @@ public class Ejecutor {
         
         ArchivoEscritura archivo = new ArchivoEscritura(nombreArchivo);
         
-        Hospital[] lista = {h1, h2, h3};
+        Hospital[] lista = {h1, h2, h3, h4};
         
         archivo.establecerRegistro(h1);
         archivo.establecerSalida();
@@ -32,6 +32,7 @@ public class Ejecutor {
         ArchivoLectura lectura = new ArchivoLectura(nombreArchivo);
         lectura.establecerLista();
         System.out.println(lectura);
+        lectura.cerrarArchivo();
         
     }
     
