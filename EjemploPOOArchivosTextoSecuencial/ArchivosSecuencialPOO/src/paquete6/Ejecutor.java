@@ -6,22 +6,28 @@ public class Ejecutor {
     public static void main(String[] args) {
         
         // nombre del archivo
-        String nombreArchivo = "calificaciones2.txt";
+        String nombreArchivo = "Hospital.txt";
         
         Hospital h1 = new Hospital("San Pancho",100,1000.35);
         Hospital h2 = new Hospital("Las Fuentes",500,14000);
         Hospital h3 = new Hospital("San Pancho",200,13000);
+        Hospital h4 = new Hospital("San Agustin",600,22000);
         
         ArchivoEscritura archivo = new ArchivoEscritura(nombreArchivo);
         
         Hospital[] lista = {h1, h2, h3};
         
-        for (int i = 0; i < lista.length; i++) {
-            // establecer el valor del atributo registro
-            archivo.establecerRegistro(lista[i]);
-            // establecer en el archivo el atributo del registro
-            archivo.establecerSalida();
-        }
+        archivo.establecerRegistro(h1);
+        archivo.establecerSalida();
+        
+        archivo.establecerRegistro(h2);
+        archivo.establecerSalida();
+        
+        archivo.establecerRegistro(h3);
+        archivo.establecerSalida();
+        
+        archivo.establecerRegistro(h4);
+        archivo.establecerSalida();
         
         ArchivoLectura lectura = new ArchivoLectura(nombreArchivo);
         lectura.establecerLista();
