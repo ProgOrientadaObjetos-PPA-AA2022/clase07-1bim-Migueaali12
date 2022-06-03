@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package paquete4;
 
 
@@ -23,9 +19,8 @@ public class Ejecutor {
         EscrituraArchivoSecuencial archivo = 
                 new EscrituraArchivoSecuencial(nombreArchivo);
         
-        // establecer el valor del atributo registro
+        
         archivo.establecerRegistroProfesor(profesor1);
-        // establecer en el archivo el atributo del registro
         archivo.establecerSalida();
         archivo.establecerRegistroProfesor(profesor2);
         archivo.establecerSalida();

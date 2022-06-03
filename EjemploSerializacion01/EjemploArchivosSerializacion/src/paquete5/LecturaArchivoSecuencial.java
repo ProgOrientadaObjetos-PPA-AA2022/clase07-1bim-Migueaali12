@@ -41,6 +41,7 @@ public class LecturaArchivoSecuencial {
         if (f.exists()) {
 
             while (true) {
+                
                 try {
                     Hospital registro = (Hospital) entrada.readObject();
                     Hospitales.add(registro);
